@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Investigation Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include jsPDF Library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Social Media Investigation Tool</h1>
+
+        <!-- Step 1: Select Social Media Platform -->
+        <div class="section" id="platform-selection">
+            <h2>Select Social Media Platform</h2>
+            <select id="platform">
+                <option value="facebook">Facebook</option>
+                <option value="twitter">Twitter</option>
+                <option value="instagram">Instagram</option>
+                <option value="telegram">Telegram</option>
+                <option value="whatsapp">Whatsapp</option>
+            </select>
+        </div>
+
+        <!-- Step 2: Enter Login Credentials -->
+        <div class="section" id="credentials">
+            <h2>Enter Login Credentials</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+
+        <!-- Step 3: Select Reason for Investigation -->
+        <div class="section" id="reason">
+            <h2>Select Reason for Investigation</h2>
+            <select id="reason-select">
+                <option value="terrorism">Terrorism Related</option>
+                <option value="drug-trafficking">Drug Trafficking</option>
+                <option value="illegal-activities">Other Illegal Activities</option>
+            </select>
+        </div>
+
+        <!-- Step 4: Investigate Button -->
+        <div class="section" id="investigate">
+            <button id="investigate-btn">Investigate</button>
+        </div>
+
+        <!-- Step 5: Report -->
+        <div class="section" id="report">
+            <h2>Report</h2>
+            <p id="report-content">No investigation performed yet.</p>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
